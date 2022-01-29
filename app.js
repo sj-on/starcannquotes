@@ -2,7 +2,7 @@ let quote = document.getElementById('quote');
 
 console.log(quote);
 
-fetch('/quotes.json')
+fetch('./quotes.json')
   .then(response => response.json())
   .then(data => {
       starcannqs = data.quotes;
